@@ -15,29 +15,19 @@ TODOLIST
 const numberDisplay = document.getElementById('number')
 
 
-/*Creazione ciclo iterativo*/ 
-for (let i = 1; i < 101; i++){
-
-    console.log(` ${i}`)
-    numberDisplay.innerHTML += (`${i}<br/>`);  
-if (i % 3 === 0) {
-   
-    numberDisplay.innerHTML += (`fizz <br/>`);
-    console.log('fizz')
-}
-
-if ( i % 5 === 0){
-    numberDisplay.innerHTML += (`buzz <br/>`);
-    console.log('buzz')
-}
-
-if (( i % 5 === 0) && (i % 3 === 0)){
-    numberDisplay.innerHTML += (`fizzbuzz <br/>`);
-    console.log('fizzbuzz')
-} 
+//Apparizione nel DOM dei numeri tramite creazione ciclo iterativo
+ 
+for (let i=1; i < 101; i++){
+   //apparizione fizz e buzz
+    if (i % 15 == 0)  numberDisplay.innerHTML += (`FizzBuzz <br/>`);  
+  
+    else if (i % 3 == 0)  numberDisplay.innerHTML += ("Fizz<br/>");
+  
+    else if (i % 5 == 0)  numberDisplay.innerHTML += ("Buzz<br/>")
+  
+        else  numberDisplay.innerHTML += (`${i}<br/>`);  
 
 }
-
 
 
 

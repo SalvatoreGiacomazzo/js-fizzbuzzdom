@@ -1,2 +1,12 @@
 .container{width:1000px;
 margin: 50px 200px;}
+
+
+.fizz{color:orange;
+font-weight: 900;}
+
+.buzz{color: purple;
+font-weight: 900;}
+
+.fizzbuzz{color:greenyellow;
+font-weight: 900;}

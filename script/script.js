@@ -19,11 +19,30 @@ const numberDisplay = document.getElementById('number')
  
 for (let i=1; i < 101; i++){
    //apparizione fizz e buzz
-    if (i % 15 == 0)  numberDisplay.innerHTML += (`FizzBuzz <br/>`);  
+    if (i % 15 == 0) {
+        const div = document.createElement('div') //Creazione del div e aggiunta dello stile
+        div.append('FizzBuzz')
+        numberDisplay.appendChild(div)
+
+        div.classList.add("fizzbuzz");
+    }  
   
-    else if (i % 3 == 0)  numberDisplay.innerHTML += ("Fizz<br/>");
+    else if (i % 3 == 0) {
+        const div = document.createElement('div') //Creazione del div e aggiunta dello stile
+        div.append('Fizz')
+        numberDisplay.appendChild(div)
+        
+        div.classList.add("fizz");
+
+    }
   
-    else if (i % 5 == 0)  numberDisplay.innerHTML += ("Buzz<br/>")
+    else if (i % 5 == 0) {
+        const div = document.createElement('div') //Creazione del div e aggiunta dello stile
+        div.append('Buzz')
+        numberDisplay.appendChild(div)
+
+        div.classList.add("buzz");
+    }
   
         else  numberDisplay.innerHTML += (`${i}<br/>`);  
 
